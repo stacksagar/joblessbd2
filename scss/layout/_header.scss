@@ -1,0 +1,54 @@
+.header {
+    background: #fff;
+    height: 80px;
+    box-shadow: 0px 0px 20px 0px #ddd;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .header_icon {
+            font-size: 22px;
+            color: #777;
+        }
+        .header_left {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 0 15px;
+        }
+        .header_right {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            li {
+                margin-left: 40px;
+            }
+            .profile_image {
+                border: 2px solid #555;
+                border-radius: 100%;
+            }
+            .profile_image {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+            }
+            .header_deposit_btn {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #f5f6f7;
+                padding: 0 20px;
+                height: 48px;
+                border-radius: 50px;
+                box-shadow: 0 4px 8px rgba(29, 34, 37, .1);
+                background-color: #581ac4;
+                background-image: conic-gradient(from 1turn, #581ac4, #773cfd);
+                .header_icon {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}

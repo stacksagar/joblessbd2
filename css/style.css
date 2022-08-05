@@ -1,0 +1,107 @@
+/*
+Template Name: JoblessStation HTML Template
+
+Author: bangladeshisoftwares
+Author URI: https://themeforest.net/user/bangladeshisoftware
+Version: 1.0.0
+*/
+/* TABLE OF CONTENTS
+	- Base
+	- Header
+	- Sidebar
+	- Footer
+	- Sections
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, Oswald, Merienda, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 95%;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 42px; }
+
+h2 {
+  font-size: 42px; }
+
+h3 {
+  font-size: 34px; }
+
+h4 {
+  font-size: 28px; }
+
+h5 {
+  font-size: 24px; }
+
+h6 {
+  font-size: 20px; }
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 32px; }
+  h2 {
+    font-size: 30px; }
+  h3 {
+    font-size: 28px; }
+  h4 {
+    font-size: 26px; }
+  h5 {
+    font-size: 24px; }
+  h6 {
+    font-size: 22px; } }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.header {
+  background: #fff;
+  height: 80px;
+  box-shadow: 0px 0px 20px 0px #ddd; }
+  .header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .header .container .header_icon {
+      font-size: 22px;
+      color: #777; }
+    .header .container .header_left {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 0 15px; }
+    .header .container .header_right {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%; }
+      .header .container .header_right li {
+        margin-left: 40px; }
+      .header .container .header_right .profile_image {
+        border: 2px solid #555;
+        border-radius: 100%; }
+      .header .container .header_right .profile_image {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%; }
+      .header .container .header_right .header_deposit_btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #f5f6f7;
+        padding: 0 20px;
+        height: 48px;
+        border-radius: 50px;
+        box-shadow: 0 4px 8px rgba(29, 34, 37, 0.1);
+        background-color: #581ac4;
+        background-image: conic-gradient(from 1turn, #581ac4, #773cfd); }
+        .header .container .header_right .header_deposit_btn .header_icon {
+          color: #fff !important; }

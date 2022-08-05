@@ -1,0 +1,25 @@
+.gradient_blue_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f5f6f7;
+    padding: 0 20px;
+    height: 48px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(29, 34, 37, .1);
+    background-color: #581ac4;
+    background-image: conic-gradient(from 1turn, #581ac4, #773cfd);
+}
+
+.gradient_blue_btn:focus {
+    outline: 3px solid #99999950;
+}
+
+@media only screen and (max-width:640px) {
+    .gradient_blue_btn {
+        gap: 7px;
+        padding: 0 15px;
+        height: 48px;
+        border-radius: 50px;
+    }
+}

@@ -1,25 +1,44 @@
 .gradient_blue_btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #f5f6f7;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f5f6f7;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  padding: 0 20px;
+  height: 44px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(29, 34, 37, 0.1);
+  background-color: #581ac4;
+  background-image: conic-gradient(from 1turn, #581ac4, #773cfd);
+}
+
+.gradient_green_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  height: 44px;
+  border-radius: 50px;
+  color: #f5f6f7;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  box-shadow: 0 4px 8px rgba(29, 34, 37, 0.1);
+  background-color: var(--primary-color);
+  background-image: conic-gradient(from 1turn, #43b309, #5ddb1c);
+}
+
+.gradient_blue_btn:focus,
+.gradient_green_btn:focus {
+  outline: 3px solid #99999950;
+}
+
+@media only screen and (max-width: 640px) {
+  .gradient_blue_btn,
+  .gradient_green_btn {
+    gap: 7px;
+    padding: 0 15px;
     height: 48px;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(29, 34, 37, .1);
-    background-color: #581ac4;
-    background-image: conic-gradient(from 1turn, #581ac4, #773cfd);
-}
-
-.gradient_blue_btn:focus {
-    outline: 3px solid #99999950;
-}
-
-@media only screen and (max-width:640px) {
-    .gradient_blue_btn {
-        gap: 7px;
-        padding: 0 15px;
-        height: 48px;
-        border-radius: 50px;
-    }
+  }
 }

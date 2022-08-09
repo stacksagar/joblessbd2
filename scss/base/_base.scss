@@ -1,65 +1,96 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Roboto, Oswald, Merienda, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, Oswald, Merienda, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+body {
+  background: #fcfafa;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  letter-spacing: 0.2px;
 }
 
 .container {
-    width: calc(100% - 40px);
-    margin: 0 auto;
+  width: calc(100% - 40px);
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 h2 {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 h3 {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 h4 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 h5 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 h6 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 720px) {
-    h1 {
-        font-size: 32px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    h3 {
-        font-size: 28px;
-    }
-    h4 {
-        font-size: 26px;
-    }
-    h5 {
-        font-size: 24px;
-    }
-    h6 {
-        font-size: 22px;
-    }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 22px;
+  }
 }
 
 button {
-    border: none;
-    background: transparent;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.transparent_scrollbar {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+
+.transparent_scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.transparent_scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.transparent_scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }

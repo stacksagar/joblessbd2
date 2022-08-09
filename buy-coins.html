@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JoblessBD - Earn money with easy tasks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT-AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/6788eb3be6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BEGIN CSS STYLES -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- END CSS STYLES -->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header_left">
+          <button id="sidebar_nav_toggler">
+            <span class="header_icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="logo">
+            <img src="assets/icons/working.png" alt="" />
+            <span>JOBLESS</span>
+          </div>
+        </div>
+
+        <ul class="header_right">
+          <!-- <li>
+            <a href="#" class="header_signin_btn">
+              <span>Signin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="header_signup_btn gradient_green_btn">
+              <span>Signup</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a
+              href="buy-coins.html"
+              class="header_deposit_btn gradient_blue_btn"
+            >
+              <span class="header_icon">
+                <i class="fas fa-wallet"></i>
+              </span>
+              <span>Buy Coins</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="header_icon">
+                <i class="fas fa-bell"></i>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                class="profile_image"
+                src="https://randomuser.me/api/portraits/men/43.jpg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="content_wrapper">
+      <!--===== Sidebar Navigation =====-->
+      <div class="sidebar_nav transparent_scrollbar">
+        <div class="sidebar_nav_container">
+          <ul>
+            <h6 class="sidebar_nav_title">Earn Coins</h6>
+            <li>
+              <a href="#">
+                <img src="assets/icons/play.png" alt="" />
+                <span>Watch Videos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/youtube.svg" alt="" />
+                <span>Youtube</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/website.svg" alt="" />
+                <span>Website</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/work.svg" alt="" />
+                <span>Jobs</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <h6 class="sidebar_nav_title">Play & Wins</h6>
+            <li>
+              <a href="#">
+                <img src="assets/icons/wheel.png" alt="" />
+                <span>Lucky Wheel</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/gift.png" alt="" />
+                <span>Lottery</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <h6 class="sidebar_nav_title">PROMOTE ADD/EDIT</h6>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: red">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Youtube</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <ul>
+                <li><a href="youtube-views.html">Views</a></li>
+                <li><a href="youtube-likes.html">Likes</a></li>
+                <li><a href="youtube-comments.html">Comments</a></li>
+                <li><a href="youtube-subscribers.html">Subscribers</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: blueviolet">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span>Facebook</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <ul>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Likes</a></li>
+                <li><a href="#">Follow</a></li>
+                <li><a href="#">Comments</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: #1da1f2">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span>Twitter</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <ul>
+                <li><a href="#"> Likes </a></li>
+                <li><a href="#"> Tweets </a></li>
+                <li><a href="#"> Follows </a></li>
+                <li><a href="#"> Retweets </a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul>
+            <h6 class="sidebar_nav_title">MORE</h6>
+            <li>
+              <a href="#">
+                <img src="assets/icons/question.png" alt="" />
+                <span>How It works ?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/how.png" alt="" />
+                <span>FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/contact.png" alt="" />
+                <span>Contact US</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/info.png" alt="" />
+                <span>About US</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar_nav_overlay"></div>
+      <!--===== Sidebar Navigation End =====-->
+
+      <!--===== main page content =====-->
+      <div class="content">
+        <div class="container">
+          <div class="buy-coins">
+            <h4 class="top_title">Buy Coins Now and Get 100% MORE Coins!</h4>
+
+            <div class="description">
+              <h5>Buy Coins</h5>
+              <p>
+                <b>
+                  On YouLikeHits the only way to get yourself more Likes, Views
+                  and Visits is by having Coins! </b
+                ><br />
+                You have to login and Like, View or Visit other users in order
+                to get Coins. Here you can buy Coins instead of putting in all
+                that work. It's a quick, easy and worthwhile way to boost your
+                Social Network presence.
+              </p>
+            </div>
+
+            <h6 class="note_title">
+              <b>Notice:</b> Coins will be added within 24 hours after purchase.
+            </h6>
+
+            <div class="packages">
+              <div class="package">
+                <div class="pack_details">
+                  <div>
+                    <p><del>1,500 Coins</del></p>
+                    <p>3,000 Coins</p>
+                  </div>
+                  <div>
+                    <p>
+                      <b> $10 </b>
+                    </p>
+                    <p>
+                      <small> 300 Coins per $1 </small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="payment_options">
+                  <img
+                    src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="package">
+                <div class="pack_details">
+                  <div>
+                    <p><del>5,000 Coins</del></p>
+                    <p>10,000 Coins</p>
+                  </div>
+                  <div>
+                    <p>
+                      <b> $25 </b>
+                    </p>
+                    <p>
+                      <small> 400 Coins per $1 </small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="payment_options">
+                  <img
+                    src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="package">
+                <div class="pack_details">
+                  <div>
+                    <p><del>12,500 Coins</del></p>
+                    <p>25,000 Coins</p>
+                  </div>
+                  <div>
+                    <p>
+                      <b> $50 </b>
+                    </p>
+                    <p>
+                      <small> 500 Coins per $1 </small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="payment_options">
+                  <img
+                    src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="package">
+                <div class="pack_details">
+                  <div>
+                    <p><del>30,000 Coins</del></p>
+                    <p>60,000 Coins</p>
+                  </div>
+                  <div>
+                    <p>
+                      <b> $100 </b>
+                    </p>
+                    <p>
+                      <small> 600 Coins per $1 </small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="payment_options">
+                  <img
+                    src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="package">
+                <div class="pack_details">
+                  <div>
+                    <p><del>70,000 Coins</del></p>
+                    <p>140,000 Coins</p>
+                  </div>
+                  <div>
+                    <p>
+                      <b> $200 </b>
+                    </p>
+                    <p>
+                      <small> 700 Coins per $1 </small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="payment_options">
+                  <img
+                    src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="package">
+                <div class="pack_details">
+                  <div>
+                    <p><del>160,000 Coins</del></p>
+                    <p>320,000 Coins</p>
+                  </div>
+                  <div>
+                    <p>
+                      <b> $400 </b>
+                    </p>
+                    <p>
+                      <small> 800 Coins per $1 </small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="payment_options">
+                  <img
+                    src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="package">
+                <div class="pack_details">
+                  <div>
+                    <p><del>300,000 Coins</del></p>
+                    <p>600,000 Coins</p>
+                  </div>
+                  <div>
+                    <p>
+                      <b> $600 </b>
+                    </p>
+                    <p>
+                      <small> 1000 Coins per $1 </small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="payment_options">
+                  <img
+                    src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="description">
+              <h5>Frequently Asked Questions</h5>
+
+              <h6>How long does it take to get my Coins?</h6>
+              <p>
+                Your Coins are applied within 24 hours of purchase but are
+                usually applied much quicker. Make sure to confirm payment
+                through your PayPal email if your YouLikeHits email doesn't
+                match your PayPal email. If it's taking longer than 24 hours and
+                you feel there is an error please feel free to contact us at
+                YouLikeHits Support.
+              </p>
+              <br />
+              <h6>What is Premium?</h6>
+
+              <p>
+                Premium is a special account subscription. When your account is
+                Premium you can put your content above everyone's content who
+                isn't Premium. Your content will also display a green border
+                instead of the normal white border which will make it stand out.
+                You will also be able to set your Payouts to 35 instead of 30.
+                Additional Premium time will be added to your existing Premium
+                subscription. Your Coins do not expire after Premium time runs
+                out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--===== main page content =====-->
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -3,7 +3,225 @@
 }
 
 .content {
-  width: 100%;
-  height: calc(100vh - 80px);
+  padding: 24px 0;
+  height: calc(100vh - 128px);
   overflow-y: auto;
+  color: $dark;
+
+  .home {
+    max-width: 1400px;
+    margin: 0 auto;
+    .boxes {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+
+      .box {
+        grid-column: span 4 / span 4;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 24px 0;
+        gap: 12px 0;
+        @media only screen and (max-width: 767px) {
+          grid-column: span 6 / span 6;
+        }
+
+        .value_area {
+          text-align: center;
+          font-size: 22px;
+          font-weight: bold;
+          @media only screen and (max-width: 540px) {
+            font-size: 16px;
+          }
+        }
+
+        .title {
+          font-size: 24px;
+          text-align: center;
+          @media only screen and (max-width: 540px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .box:nth-of-type(1) {
+        background: #1665d8;
+      }
+      .box:nth-of-type(2) {
+        background: #34aa44;
+      }
+      .box:nth-of-type(3) {
+        background: #f6ab2f;
+      }
+      .box:nth-of-type(4) {
+        background: #6758f3;
+      }
+      .box:nth-of-type(5) {
+        background: #a829d4;
+      }
+      .box:nth-of-type(6) {
+        background: #e038b1;
+      }
+    }
+
+    .description {
+      background: #fff;
+      padding: 24px;
+      border-radius: 5px;
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .copy_refarrel {
+        max-width: 500px;
+        position: relative;
+        input {
+          width: 100%;
+          padding: 12px;
+          border: 1.5px solid $light_dark;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font_base;
+        }
+        button {
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          right: 12px;
+        }
+      }
+
+      .share_buttons {
+        display: flex;
+        width: fit-content;
+        button {
+          background: #555;
+          padding: 8px;
+          color: #fff;
+          &:hover {
+            background: #333;
+          }
+          &:focus {
+            outline: 2px solid #99999991;
+          }
+          &:first-of-type {
+            border-radius: 4px 0px 0px 4px;
+          }
+          &:last-of-type {
+            border-radius: 0px 4px 4px 0px;
+          }
+        }
+      }
+    }
+
+    .activities {
+      margin-top: 24px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px 0;
+      background: #f1f1f1;
+      .title {
+        color: #189dc3;
+        text-align: center;
+        margin-bottom: 6px;
+      }
+      .activity {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        border-radius: 4px;
+        img {
+          height: 20px;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          gap: 0 6px;
+        }
+        .date {
+          color: #777;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .buy-coins {
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+
+    .top_title {
+      background: #ff0079;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 4px;
+    }
+    .description {
+      text-align: center;
+      padding: 24px;
+      border-radius: 4px;
+      background: #e3f1f4;
+      h5 {
+        color: #036c89;
+        margin-bottom: 12px;
+      }
+    }
+    .note_title {
+      color: #800000;
+      padding: 12px 0;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .packages {
+      background: #f5f5f5;
+      display: grid;
+      padding: 24px;
+      gap: 24px;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      .package {
+        grid-column: span 4 / span 4;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 24px;
+        border-radius: 4px;
+        .pack_details {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding-bottom: 24px;
+        }
+
+        .payment_options {
+          display: flex;
+          cursor: pointer;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .content {
+    margin-left: auto;
+    width: calc(100% - 220px);
+  }
+  .content.full {
+    width: calc(100% - 100px) !important;
+  }
 }

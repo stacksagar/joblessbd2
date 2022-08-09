@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="HandheldFriendly" content="true" />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +23,6 @@
       src="https://kit.fontawesome.com/6788eb3be6.js"
       crossorigin="anonymous"
     ></script>
-    <!-- FONT-AWESOME -->
 
     <!-- BEGIN CSS STYLES -->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -36,14 +39,14 @@
               <i class="fas fa-bars"></i>
             </span>
           </button>
-          <div class="logo">
+          <a href="index.html" class="logo">
             <img src="assets/icons/working.png" alt="" />
             <span>JOBLESS</span>
-          </div>
+          </a>
         </div>
 
         <ul class="header_right">
-          <li>
+          <!-- <li>
             <a href="#" class="header_signin_btn">
               <span>Signin</span>
             </a>
@@ -53,14 +56,26 @@
             <a href="#" class="header_signup_btn gradient_green_btn">
               <span>Signup</span>
             </a>
-          </li>
+          </li> -->
 
           <li>
-            <a href="#" class="header_deposit_btn gradient_blue_btn">
+            <a href="deposit.html" class="header_deposit_btn gradient_blue_btn">
               <span class="header_icon">
                 <i class="fas fa-wallet"></i>
               </span>
               <span>Deposit</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="buy-coins.html"
+              class="header_deposit_btn gradient_blue_btn"
+            >
+              <span class="header_icon">
+                <i class="fas fa-wallet"></i>
+              </span>
+              <span>Buy Coins</span>
             </a>
           </li>
 
@@ -72,43 +87,159 @@
             </a>
           </li>
 
-          <li>
-            <a href="#">
+          <li class="my_profile_btn">
+            <a href="#" id="profile-options-toggler">
               <img
                 class="profile_image"
                 src="https://randomuser.me/api/portraits/men/43.jpg"
                 alt=""
               />
             </a>
+
+            <div class="profile-options">
+              <div>
+                <img
+                  class="profile_image"
+                  src="https://randomuser.me/api/portraits/men/43.jpg"
+                  alt=""
+                />
+                <div>
+                  <p><b>John Doe</b></p>
+                  <p><a href="my-account.html">My Account</a></p>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <a href="coin-to-cash.html">
+                    <span class="icon"
+                      ><i class="fa-solid fa-right-left"></i>
+                    </span>
+                    <span class="text">Coin to Cash</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"
+                      ><i class="fa-solid fa-paper-plane"></i>
+                    </span>
+                    <span class="text">Transfer Coins</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="withdraw.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <span class="text">Withdraw Money</span>
+                  </a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="rewards.html">
+                    <span class="icon"
+                      ><i class="fa-solid fa-check-circle"></i>
+                    </span>
+                    <span class="text">Rewards</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="banner-ads.html">
+                    <span class="icon"><i class="fa-solid fa-image"></i> </span>
+                    <span class="text">Banner Ads</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
     </header>
 
     <main class="content_wrapper">
-      <!-- Sidebar Navigation -->
-      <div class="sidebar_nav">
+      <!--===== Sidebar Navigation =====-->
+      <div class="sidebar_nav transparent_scrollbar">
         <div class="sidebar_nav_container">
           <ul>
             <h6 class="sidebar_nav_title">Earn Coins</h6>
-            <li>
-              <a href="#">
-                <img src="assets/icons/play.png" alt="" />
-                <span>Watch Videos</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="assets/icons/youtube.svg" alt="" />
+
+            <li class="dropdown">
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: red">
+                  <i class="fab fa-youtube"></i>
+                </span>
                 <span>Youtube</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
               </a>
+
+              <ul>
+                <li><a href="youtube-views.html">Views</a></li>
+                <li><a href="youtube-likes.html">Likes</a></li>
+                <li><a href="youtube-comments.html">Comments</a></li>
+                <li><a href="youtube-subscribers.html">Subscribers</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="#">
-                <img src="assets/icons/website.svg" alt="" />
+
+            <li class="dropdown">
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: blueviolet">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span>Facebook</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <ul>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Likes</a></li>
+                <li><a href="#">Follow</a></li>
+                <li><a href="#">Comments</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: #1da1f2">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span>Twitter</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <ul>
+                <li><a href="#"> Likes </a></li>
+                <li><a href="#"> Tweets </a></li>
+                <li><a href="#"> Follows </a></li>
+                <li><a href="#"> Retweets </a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: #1da1f2">
+                  <img src="assets/icons/website.svg" alt="" />
+                </span>
                 <span>Website</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
               </a>
+
+              <ul>
+                <li><a href="#"> View </a></li>
+              </ul>
             </li>
+
             <li>
               <a href="#">
                 <img src="assets/icons/work.svg" alt="" />
@@ -137,17 +268,21 @@
             <h6 class="sidebar_nav_title">PROMOTE ADD/EDIT</h6>
 
             <li class="dropdown">
-              <a href="#">
-                <img src="assets/icons/youtube.svg" alt="" />
-                <span>Channel</span>
-                <button class="chevron_right">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </button>
+              <a href="#" class="dropdown_toggler">
+                <span class="icon" style="color: red">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Youtube</span>
+                <span class="chevron_right">
+                  <i class="fa fa-chevron-right"></i>
+                </span>
               </a>
 
               <ul>
-                <li>Add Channel</li>
-                <li>My Channels</li>
+                <li><a href="youtube-views.html">Views</a></li>
+                <li><a href="youtube-likes.html">Likes</a></li>
+                <li><a href="youtube-comments.html">Comments</a></li>
+                <li><a href="youtube-subscribers.html">Subscribers</a></li>
               </ul>
             </li>
           </ul>
@@ -181,138 +316,152 @@
           </ul>
         </div>
       </div>
-      <!-- Overlay Black Screen Sidebar Remover For Small Devices -->
       <div class="sidebar_nav_overlay"></div>
+      <!--===== Sidebar Navigation End =====-->
 
+      <!--===== main page content =====-->
       <div class="content">
         <div class="container">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga illo
-          nihil quisquam soluta! Quos earum deserunt quibusdam illo doloribus.
-          Totam exercitationem distinctio enim molestiae quod unde dignissimos.
-          Perferendis itaque ad nostrum doloremque, eveniet quaerat architecto
-          maxime quidem beatae cum aliquam voluptatem accusamus rerum error
-          neque dolore harum nulla quo provident dicta. Consectetur quos, natus
-          repellendus incidunt pariatur rerum explicabo minus eaque ipsam rem
-          neque voluptates eos a deserunt iusto voluptas voluptatem dignissimos
-          placeat praesentium est reprehenderit cum assumenda! Maiores
-          architecto necessitatibus delectus, consequuntur natus ab doloremque
-          dolorum soluta repellendus, nostrum error dolore, eligendi et. Cum
-          officiis est, deserunt voluptates quae tenetur tempore officia fugiat
-          perferendis iusto repellat, nulla illum sequi. Assumenda, quisquam
-          quos ad aliquam mollitia voluptates, culpa repellat totam laborum cum
-          possimus explicabo at quod aliquid hic iste natus id quia harum
-          consectetur qui distinctio asperiores ab? Consectetur distinctio fugit
-          porro tenetur possimus esse aspernatur dignissimos in praesentium,
-          recusandae impedit numquam ipsam placeat ipsa adipisci aperiam quaerat
-          eos earum rerum excepturi pariatur neque iste! Optio illo doloremque
-          molestiae deleniti architecto eum eligendi, rem, veniam deserunt sed
-          praesentium alias magni aliquid velit id recusandae. Inventore dicta
-          facere provident tempora a dignissimos eaque? Consequuntur ullam
-          ducimus delectus eligendi, tempore a amet minima necessitatibus
-          aspernatur labore fugiat commodi voluptatum pariatur? Impedit, non
-          nostrum, reprehenderit totam esse recusandae temporibus illo quidem
-          harum quas dolorum culpa obcaecati neque iste molestiae nemo
-          assumenda, alias suscipit cupiditate. Qui iure accusamus, minima,
-          dicta voluptates et temporibus alias deserunt explicabo atque
-          dignissimos nostrum maxime sed quam enim ex magnam quas vel tempora
-          aperiam asperiores? Fuga error, perferendis consequuntur expedita
-          corrupti architecto? Tempore voluptate recusandae aliquam esse. Hic
-          cupiditate a ratione, inventore enim accusantium nam qui
-          exercitationem rem placeat provident nemo odit corrupti. Eveniet
-          quisquam nobis aliquam numquam aspernatur, culpa ea enim atque nulla
-          placeat dolores a deserunt modi obcaecati consequuntur tenetur
-          cupiditate? Eum explicabo sit nam error minima illum itaque fugiat
-          eos? Adipisci ad architecto provident iure dolore praesentium quos
-          repellat dignissimos possimus rem culpa velit, nesciunt maxime minima
-          maiores aut minus facilis odio. Reprehenderit nisi aperiam amet atque
-          mollitia iure assumenda officia. Maxime provident natus dicta veniam
-          repudiandae ex et praesentium, asperiores adipisci harum. Autem aut ab
-          quod, excepturi, sunt, ipsa quam incidunt voluptatum debitis officia
-          minus! Corrupti velit sint illo quos cupiditate nostrum architecto
-          earum quod hic quibusdam odio adipisci, placeat aliquid doloremque
-          reiciendis? Qui dignissimos rerum quasi error minima culpa modi,
-          dolor, id enim ea magnam corrupti. Odio similique natus rerum ratione!
-          Debitis facilis itaque placeat excepturi unde tenetur. Inventore
-          labore reprehenderit deleniti, fugiat laboriosam veritatis eum,
-          ducimus cum, earum nisi ratione ipsum natus consectetur! Officiis
-          dolorem facere ipsa reprehenderit laudantium beatae incidunt
-          praesentium doloribus, ea mollitia dignissimos odio culpa at
-          repudiandae explicabo possimus nostrum ex, obcaecati fugit suscipit,
-          magnam sapiente quibusdam. Omnis, est! Sequi consectetur accusamus
-          possimus iste ratione laboriosam aspernatur, officiis eligendi
-          perspiciatis sapiente sunt et ea dolores eius tenetur cumque. Dolore
-          odio veniam fuga eveniet suscipit cum explicabo delectus unde corrupti
-          reprehenderit, accusamus dolorem illum quidem, excepturi veritatis
-          harum culpa rem nulla debitis ut sequi! Voluptate eum eius impedit
-          sequi illum architecto ducimus quas est, neque eveniet sunt dicta
-          voluptatum corrupti totam veniam exercitationem ad aut vero ex enim.
-          Amet voluptatibus alias, eaque ab similique molestias ducimus quod
-          laboriosam voluptatum omnis. Nobis eius praesentium nesciunt? Beatae
-          non quos doloremque, esse laboriosam assumenda sit. Enim culpa nihil
-          fuga blanditiis ratione dicta eligendi recusandae quod quo, magni,
-          asperiores odit sequi, libero officia velit suscipit alias et mollitia
-          doloremque explicabo accusantium harum id tenetur? Neque cum
-          repudiandae eligendi tempore nulla ipsa aliquid quidem provident
-          minima iure autem at debitis praesentium adipisci placeat fugiat, hic
-          illum quae nam rem sunt! Eos id nesciunt odio! Explicabo sed debitis
-          dolorem voluptas placeat laborum alias culpa facere quaerat nesciunt
-          adipisci, veniam incidunt ratione. Consequuntur voluptates fugit
-          perspiciatis vel facilis quia ad debitis ducimus explicabo. Modi
-          recusandae, quaerat veniam quidem nemo eligendi est eius obcaecati!
-          Dolorem, reprehenderit odit quia temporibus tempore quidem quas quasi
-          vitae tempora quaerat ex commodi nihil voluptatibus aspernatur rem
-          hic, obcaecati veniam! Et itaque fugit aut consequatur doloremque
-          recusandae hic rem, enim placeat, velit omnis eum accusamus nulla
-          quibusdam molestiae neque sint cumque illum accusantium. Ducimus
-          voluptatibus dicta, itaque quidem quaerat eum maiores beatae eveniet,
-          exercitationem labore laboriosam! Rem inventore totam odio mollitia
-          tempora dicta voluptate maiores aperiam quidem ipsum, est, corrupti
-          quam. Necessitatibus odit, suscipit non fugit minus at molestiae
-          dignissimos voluptates odio repudiandae accusantium magnam obcaecati
-          voluptate neque accusamus ipsum dolor beatae nostrum aliquam
-          consequatur voluptas debitis incidunt impedit? Beatae ab consequatur
-          eaque eius nulla esse maiores debitis laudantium hic quis. Nisi,
-          illum? Accusamus nobis neque reiciendis asperiores, aut minus. Impedit
-          amet eligendi quam cumque quidem. Molestiae consectetur consequuntur
-          quod cumque, maxime molestias. Enim animi minus exercitationem
-          mollitia ea, tempore laboriosam totam distinctio unde obcaecati iure
-          qui eligendi aperiam amet, ipsum soluta in similique fugiat sunt.
-          Accusamus deserunt tenetur quasi vitae voluptate assumenda fugit autem
-          odio ducimus itaque? Rem quisquam a officia accusantium odit sint! Ut
-          debitis inventore temporibus facilis eos nihil, quidem illo at id
-          architecto reiciendis ab eum velit ipsam quos nulla consequatur est
-          labore nam esse iste quisquam optio. Deserunt quisquam facere amet
-          iste enim eos fugit? Impedit magni nostrum id inventore porro
-          praesentium tempora culpa minima non laudantium. Ratione culpa, sequi
-          vitae eum ullam molestias at blanditiis natus modi excepturi neque!
-          Dolore veniam non ratione hic tempora illo itaque consequuntur vitae
-          dicta nisi. Dignissimos tempora inventore similique placeat ex.
-          Temporibus nemo porro distinctio sapiente doloribus? Vero quod
-          reiciendis qui nostrum? Deserunt non voluptatum dignissimos officiis
-          ad a? Aliquam unde et pariatur est, totam adipisci accusamus saepe
-          dolorum dolor sed numquam, in quidem. Porro optio ratione eveniet
-          veritatis, libero natus ipsum fugit sit quo, temporibus magni fugiat
-          explicabo nisi quibusdam repellendus suscipit harum sed aspernatur
-          quam unde excepturi ipsa ipsam. Ipsam ullam voluptatum consectetur.
-          Enim repellat inventore, vero aut ipsum voluptas optio id
-          exercitationem maiores nulla, consequuntur ducimus sint! Dolorem unde
-          architecto a perferendis reprehenderit iure sed molestiae tenetur ea,
-          repellendus vitae dolorum perspiciatis amet non accusantium explicabo.
-          Dolorum, nulla quam rem, quidem sequi delectus consequatur esse cumque
-          quae reprehenderit atque nostrum perspiciatis! Placeat odit vero
-          provident dolore, facilis tenetur hic beatae amet suscipit. Corrupti,
-          voluptatem! Suscipit unde libero possimus assumenda aliquid vitae eius
-          culpa, asperiores vel quos eveniet commodi quis quidem aliquam!
-          Consequatur, reprehenderit, doloribus iusto nesciunt dolorum dolorem
-          exercitationem illo quae eius repellat repellendus tenetur corrupti
-          officia rem! Libero recusandae excepturi sed ex temporibus corporis
-          facilis molestias incidunt quod quis suscipit tenetur delectus officia
-          accusantium magni cumque doloremque eos quae minima, ullam eum ipsa
-          molestiae earum placeat. Dolor quia repudiandae ullam commodi,
-          corrupti optio eveniet debitis aliquam rem deleniti. Dolor ipsam,
-          eligendi maxime nemo natus veniam harum ullam labore at.
+          <div class="home">
+            <div class="boxes">
+              <div class="box">
+                <div class="value_area">
+                  <span class="value_area_icon">
+                    <i class="fa-solid fa-coins"></i
+                  ></span>
+                  <span class="value">100.00</span>
+                </div>
+                <div class="title">Your Coins</div>
+              </div>
+
+              <div class="box">
+                <div class="value_area">
+                  <span class="value_area_icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </span>
+                  <span class="value">10.00</span>
+                </div>
+                <div class="title">Cash Balance</div>
+              </div>
+
+              <div class="box">
+                <div class="value_area">
+                  <span class="value_area_icon">
+                    <i class="fa-solid fa-users"></i>
+                  </span>
+                  <span class="value">3</span>
+                </div>
+                <div class="title">Your Referrals</div>
+              </div>
+
+              <div class="box">
+                <div class="value_area">
+                  <span class="value_area_icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </span>
+                  <span class="value">10.00</span>
+                </div>
+                <div class="title">Total Earned</div>
+              </div>
+
+              <div class="box">
+                <div class="value_area">
+                  <span class="value_area_icon"
+                    ><i class="fa-solid fa-star"></i>
+                  </span>
+                  <span class="value">FREE</span>
+                </div>
+                <div class="title">Membership</div>
+              </div>
+
+              <div class="box">
+                <div class="value_area">
+                  <span class="value_area_icon"
+                    ><i class="fa-solid fa-right-left"></i>
+                  </span>
+                  <span class="value">7</span>
+                </div>
+                <div class="title">Total Exchanges</div>
+              </div>
+            </div>
+
+            <div class="description">
+              <h4>Do you need some money?</h4>
+
+              <p>
+                Who doesn't need money? Start earning free coins by watching
+                YouTube videos. Is free and it take a couple of minutes to earn
+                coins and convert them in real cash, paid to you using our
+                payment methods.
+              </p>
+            </div>
+
+            <div class="description">
+              <h4>Invite your friends and get more coins!</h4>
+
+              <p>
+                Invite your friends using your special affiliate URL and receive
+                <b>10% of their earnings</b> for life
+              </p>
+
+              <div class="copy_refarrel">
+                <input
+                  type="text"
+                  value="https://jobless.com/?ref=username"
+                  id="copy_refarrel_input"
+                />
+
+                <button id="copy_btn">
+                  <i class="fa-solid fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="share_buttons">
+                <button>
+                  <span><i class="fa-solid fa-share"></i></span>
+                  <span>Facebook</span>
+                </button>
+                <button>
+                  <span><i class="fa-solid fa-share"></i></span>
+                  <span>Twitter</span>
+                </button>
+                <button>
+                  <span><i class="fa-solid fa-share"></i></span>
+                  <span>WhatsApp</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="activities">
+              <h5 class="title">Your Recent Activities</h5>
+
+              <div class="activity">
+                <div>
+                  <img src="https://i.ibb.co/K9w17Xz/twitter.png" alt="" />
+                  <b class="username">you</b>
+                  <span class="action">followed to</span>
+                  <b class="username">smith321</b>
+                </div>
+
+                <div class="date">3d 14h 48m 16s ago</div>
+              </div>
+
+              <div class="activity">
+                <div>
+                  <img src="https://i.ibb.co/K9w17Xz/twitter.png" alt="" />
+                  <b class="username">john1232</b>
+                  <span class="action">followed</span>
+                  <b class="username">you</b>
+                  <span>at twitter</span>
+                </div>
+
+                <div class="date">14h 48m 16s ago</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!--===== main page content =====-->
     </main>
 
     <script src="js/main.js"></script>

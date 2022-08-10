@@ -71,6 +71,12 @@ h6 {
   }
 }
 
+.none_sm {
+  @media only screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
 button {
   border: none;
   background: transparent;

@@ -65,6 +65,10 @@ h6 {
   h6 {
     font-size: 22px; } }
 
+@media only screen and (max-width: 768px) {
+  .none_sm {
+    display: none !important; } }
+
 button {
   border: none;
   background: transparent;
@@ -135,7 +139,8 @@ button {
       .header .container .header_right li.my_profile_btn {
         position: relative; }
         .header .container .header_right li.my_profile_btn .profile-options {
-          width: 250px;
+          width: 300px;
+          z-index: 222;
           position: absolute;
           top: 100%;
           right: 0%;
@@ -179,6 +184,20 @@ button {
                   font-size: 18px; }
                 .header .container .header_right li.my_profile_btn .profile-options ul li a:hover {
                   background: #f1f1f1; }
+          .header .container .header_right li.my_profile_btn .profile-options .buttons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 0 12px;
+            padding-bottom: 12px; }
+            @media only screen and (min-width: 767px) {
+              .header .container .header_right li.my_profile_btn .profile-options .buttons {
+                display: none !important; } }
+            .header .container .header_right li.my_profile_btn .profile-options .buttons a {
+              height: 36px !important;
+              padding: 0 12px !important;
+              font-size: 14px; }
+              .header .container .header_right li.my_profile_btn .profile-options .buttons a .icon {
+                font-size: 16px; }
         .header .container .header_right li.my_profile_btn .profile-options.show {
           transform: scaleY(1); }
       .header .container .header_right .profile_image {
@@ -230,6 +249,38 @@ button {
     padding: 0 15px;
     height: 48px;
     border-radius: 50px; } }
+
+footer.main_footer {
+  margin-top: auto; }
+  footer.main_footer .footer_container {
+    max-width: 1352px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    padding: 48px 24px;
+    margin-top: auto; }
+    footer.main_footer .footer_container .footer_left {
+      width: 100%;
+      text-align: start;
+      font-size: 16px;
+      color: #333; }
+    footer.main_footer .footer_container .footer_right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0 24px;
+      justify-content: flex-end;
+      font-size: 28px; }
+    @media only screen and (max-width: 540px) {
+      footer.main_footer .footer_container {
+        flex-direction: column;
+        gap: 12px 0; }
+        footer.main_footer .footer_container .footer_right {
+          justify-content: flex-start; } }
 
 .sidebar_nav {
   transform: translateX(0%);
@@ -327,7 +378,7 @@ button {
       position: absolute;
       top: 0;
       bottom: 0;
-      right: 5px;
+      right: 10px;
       height: 100%;
       display: flex;
       align-items: center; }
@@ -370,10 +421,13 @@ button {
   display: flex; }
 
 .content {
-  padding: 24px 0;
-  height: calc(100vh - 128px);
+  padding-top: 24px;
+  min-height: calc(100vh - 104px);
   overflow-y: auto;
-  color: #222; }
+  color: #222;
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
   .content .home {
     max-width: 1400px;
     margin: 0 auto; }
@@ -456,33 +510,6 @@ button {
             border-radius: 4px 0px 0px 4px; }
           .content .home .description .share_buttons button:last-of-type {
             border-radius: 0px 4px 4px 0px; }
-    .content .home .activities {
-      margin-top: 24px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px 0;
-      background: #f1f1f1; }
-      .content .home .activities .title {
-        color: #189dc3;
-        text-align: center;
-        margin-bottom: 6px; }
-      .content .home .activities .activity {
-        background: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px;
-        border-radius: 4px; }
-        .content .home .activities .activity img {
-          height: 20px; }
-        .content .home .activities .activity div {
-          display: flex;
-          align-items: center;
-          gap: 0 6px; }
-        .content .home .activities .activity .date {
-          color: #777;
-          font-style: italic; }
   .content .buy-coins {
     max-width: 1400px;
     margin: auto;
@@ -519,10 +546,17 @@ button {
       grid-template-columns: repeat(12, minmax(0, 1fr)); }
       .content .buy-coins .packages .package {
         grid-column: span 4 / span 4;
+        grid-column: span 4 / span 4;
         background: #fff;
         border: 1px solid #ddd;
         padding: 24px;
         border-radius: 4px; }
+        @media (max-width: 1140px) {
+          .content .buy-coins .packages .package {
+            grid-column: span 6 / span 6; } }
+        @media (max-width: 640px) {
+          .content .buy-coins .packages .package {
+            grid-column: span 12 / span 12; } }
         .content .buy-coins .packages .package .pack_details {
           display: flex;
           justify-content: space-between;
@@ -532,6 +566,47 @@ button {
           display: flex;
           cursor: pointer;
           justify-content: center; }
+  .content .activities {
+    margin-top: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f1f1f1; }
+    .content .activities .title {
+      color: #189dc3;
+      text-align: center;
+      margin-bottom: 6px; }
+    .content .activities .activity {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      border-radius: 4px; }
+      @media only screen and (max-width: 640px) {
+        .content .activities .activity {
+          flex-direction: column !important;
+          gap: 6px 0; } }
+      .content .activities .activity img {
+        height: 20px; }
+      .content .activities .activity div {
+        display: flex;
+        align-items: center;
+        gap: 0 6px; }
+      .content .activities .activity .date {
+        color: #777;
+        font-style: italic; }
+    .content .activities .view_all {
+      border-radius: 4px;
+      background-color: #237d32;
+      color: #fff;
+      padding: 6px;
+      display: block;
+      text-align: center;
+      font-size: 16px; }
+      .content .activities .view_all:focus {
+        outline: 2px solid #99999950; }
 
 @media only screen and (min-width: 1023px) {
   .content {

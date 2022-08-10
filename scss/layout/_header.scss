@@ -1,4 +1,8 @@
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   background: $white;
   height: $header_height;
   box-shadow: 0px 0px 5px 0px #ddd;
